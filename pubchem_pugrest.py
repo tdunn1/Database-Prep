@@ -8,6 +8,7 @@ Created on Wed Feb  8 14:57:33 2023
 import time 
 import requests
 
+#Retrieve first 100 compounds from pubchem
 url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/'
 url_input = 'compound/cid/'
 cids = []

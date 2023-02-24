@@ -9,7 +9,6 @@ import time
 import requests
 from rdkit import Chem
 from rdkit.Chem.rdmolfiles import SDWriter
-import pdb
 
 url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/'
 url_input = 'compound/cid/'
@@ -33,9 +32,4 @@ with SDWriter('trial_mols.sdf') as w:
     for mol in mol_list:
         w.write(mol)
 
-# mol_list = ['C1=CC=C(C=C1)C(=O)O', 'CC1=CC=CC=C1']
-# with SDWriter('sample_mols.sdf') as w:
-#     for smi in mol_list:
-#         mol = Chem.MolFromSmiles(smi)
-#         w.write(mol)
         

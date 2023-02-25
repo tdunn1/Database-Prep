@@ -24,5 +24,5 @@ for i in df.index:
     df.loc[i, 'TPSA'] = rdMolDescriptors.CalcTPSA(mol) 
     df.loc[i, 'Num AroHetCycles'] = rdMolDescriptors.CalcNumAromaticHeterocycles(mol)
     
-print(df.head())
+
         
